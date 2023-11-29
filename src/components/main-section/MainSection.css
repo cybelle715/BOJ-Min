@@ -1,0 +1,11 @@
+.button{
+    background-color: #7a0424;
+}
+
+.bg-styles{
+    background: url(../../assets/main.svg);
+    width: 100%;
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+}

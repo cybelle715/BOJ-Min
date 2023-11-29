@@ -1,0 +1,59 @@
+
+.primo{
+    background: url('../../assets/bgmob.jpg'), rgba(0,0,0,0.6) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @apply lg:hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.primo p{
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* .flex{
+   display: flex;
+} */
+.primo li{
+    font-size: 12px;
+    color: white 90%;
+}
+.sermons{
+    border-radius: 12px;
+    /* height: 250px; */
+    font-size: small;
+
+}
+.flex-child{
+    align-self: flex-end;
+}
+
+.sermons h3{
+    color: var(--textcol);
+}
+.elt{
+    color: var(--textcol);
+}
+.prayer{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    /* width: 200px;
+    height: 140px; */
+    align-items: center;
+
+}
+.prayer b{
+    font-size: small;
+}
+.prayer li{
+    text-align: right;
+    padding: 0 0.8rem;
+}
+
