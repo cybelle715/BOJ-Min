@@ -44,42 +44,42 @@ const Services = () => {
 
       <div
         id="service"
-        className=" desktop-view sm:hidden md:hidden  flex   p-4"
+        className=" desktop-view sm:hidden md:hidden  grid grid-cols-3 px-8  py-4"
       >
-        <div className="Buttons py-3 px-8  justify-between grid   w-full">
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 px-4 text-white ">
+        <div className="Buttons py-4 px-8 my-4  justify-between grid   w-full">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 px-12 text-white 12 ">
             {" "}
             <img src={users} width={35} height={30} alt="" /> Team
           </button>
           <br />
 
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 text-white px-4  ">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 text-white px-12  ">
             {" "}
             <img src={users} width={35} height={38} alt="" /> Team
           </button>
           <br />
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 text-white px-4  ">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 text-white px-12  ">
             {" "}
             <img src={users} width={35} height={38} alt="" /> Team
           </button>
           <br />
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 text-white px-4  ">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 text-white px-12  ">
             {" "}
             <img src={users} width={35} height={38} alt="" /> Team
           </button>
           <br />
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 text-white px-4  ">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 text-white px-12  ">
             {" "}
             <img src={users} width={35} height={38} alt="" /> Team
           </button>
           <br />
-          <button className=" bg-[#7a0424] rounded-xl flex py-2 text-white px-4  ">
+          <button className=" bg-[#7a0424] rounded-xl flex py-4 text-white px-12  ">
             <img src={users} width={35} height={38} alt="" />
             Team
           </button>
         </div>
-        <div className=" py-4 text w-full">
-          <p className="text-md text">
+        <div className=" py-4 text ">
+          <p className="text-xl  text">
             {" "}
             <i>
               The Blood of Christ is precious because it is Christ's own great
@@ -94,7 +94,7 @@ const Services = () => {
             </i>
           </p>
         </div>
-        <div className="pic px-28 py-4 w-full">
+        <div className="pic px-20 py-4 w-full">
           <img src="src\assets\chalice.png" alt="akl" />
         </div>
       </div>

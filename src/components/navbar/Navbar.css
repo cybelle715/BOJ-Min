@@ -1,7 +1,9 @@
 .active{
-    background-color: #7A0424;
-    color: black;
-
+    background-color: white;
+  color: black;
+  border: 2px solid #7A0424;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 nav me {

@@ -27,7 +27,7 @@ export const Navbar = () => {
         <img src={logo} alt="" width={120} height={90}/>
       </h1>
       </NavLink>
-      <div className="flex justify-between gap-12 items-center">
+      <div className="flex justify-between  gap-12 items-center">
         <a href="#about"><b><h2 >About</h2></b></a>
         <NavLink to="/contact"><b><h2 >Contact</h2></b></NavLink>
         <NavLink to="/services"><b><h2 >Services</h2></b></NavLink>
