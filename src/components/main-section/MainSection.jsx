@@ -14,7 +14,7 @@ const MainSection = () => {
         <div className="flex gap-2 py-16 px-6">
             <div className="bg-styles">
             </div>
-            <div className="w-full text-sm text-center">
+            <div className="w-full text-18 text-center">
                 <p><i>
                 The Blood of Christ is precious because it is Christ's
                  own great ransom paid for the redemption of mankind. 
@@ -36,14 +36,14 @@ const MainSection = () => {
             </div>
 
         </div>
-        <div className="desktop-view sm:hidden md:hidden ">
+        <div className="desktop-view pt-64 sm:hidden md:hidden ">
            
-        <div className="first flex px-12 py-8">
+        <div className="first flex px-60 py-28">
             <div className="">
-                <img src={main} alt="" />
+                <img src={main} alt="" height={376} width={291} />
             </div>
-            <div className="w-full px-12 text-right italic">
-                <p>
+            <div className="w-full py- px-4 text-right italic">
+                <p className="italic">
                     <h1 className="font-bold text-[#7A0424] size-3xl">About</h1> <br />
                     The Blood of Christ is precious because it is Christ's
                      own great ransom paid for the redemption of mankind. 
@@ -59,7 +59,7 @@ const MainSection = () => {
             </div>
            </div>
 
-            <div className="second grid grid-cols-3 gap-9 text-sm  px-28">
+            <div className="second grid grid-cols-3 gap-9 text-sm py-  px-52">
             <button className="button flex rounded-3xl relative justify-center items-center py-6 text-white"><img src={library} alt="" width={70} height={70}/><span className="absolute">MINISTRY</span></button>
                 <button className="button rounded-3xl flex relative justify-center items-center py-6 text-white"><img src={history} alt="" width={70} height={70} /><span className="absolute">HISTORY</span></button>
                 <button className="button rounded-3xl flex relative justify-center items-center py-6 text-white"><img src={mission} alt="" width={70} height={70} /><span className="absolute">MISSION</span></button>

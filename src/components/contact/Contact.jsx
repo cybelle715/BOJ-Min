@@ -1,9 +1,16 @@
 import React from "react";
 import "./Contact.css";
+import { Navbar } from "../navbar/Navbar";
+import { Link, NavLink } from "react-router-dom";
+import logo2 from "../../assets/logo2.png";
+import logo from "../../assets/logo.svg";
+import { Navbar3 } from "../navbar3/Navbar3";
 
+import { Navbar2 } from "../navbar2/Navbar2";
 const Contact = () => {
   return (
     <div>
+      
       <div className="mobil lg:hidden  items-center justify-center py-12 px-4 ">
         <div className=" formul  rounder-3xl border-4 border-[#7a0424] px-8 grid grid-rows  bg-white py-8 mx-16 justify-center my-4">
           <h1 className="text-lg rounder-3xl font-bold text-center text-[#7a0424]">
@@ -77,10 +84,35 @@ const Contact = () => {
       </div>
 
 
-      <div className="flex destop-view sm:hidden md:hidden">
-        <div class="w-7/12 bg-[#7a0424] relative flex py-8 h-screen">
-          <div class="p-4 absolute h-4/5 w-2/3 -translate-y-1/2 top-1/2 transform right-0 text-black bg-white h-1/3">
-            <h1 className="text-lg font-bold text-center text-[#7a0424]">
+      <div className=" destop-view sm:hidden md:hidden">
+        
+        <Navbar3/>
+        <div className="flex">
+          
+        <div class="w-7/12 bg-[#7a0424] relative flex py- h-screen">
+          {/* <div className="px-12 py-4 flex">
+          <NavLink to="/">
+          <h1>
+            <img src={logo2} alt="" width={120} height={90} />
+          </h1>
+        </NavLink>
+        <div className="flex pb-4">
+          <NavLink to="/">
+            <b>
+              <h2>Home</h2>
+            </b>
+          </NavLink>
+          <a href="#about">
+            <b>
+              <h2>About</h2>
+            </b>
+          </a>
+          </div>
+          </div> */}
+          
+        
+          <div class="p-4 absolute h-4/5 w-4/5  -translate-y-1/2 top-1/2 transform right-0 text-black bg-white h-1/3">
+            <h1 className="text-lg py-4 font-bold text-center text-[#7a0424]">
               Hi, please leave us your<h1 className="text-black">message</h1>{" "}
             </h1>
 
@@ -138,21 +170,21 @@ const Contact = () => {
             <form class="max-w-md py-4 mx-auto">
   <div class="relative  z-0 w-full mb-6 group">
       <input type="text" name="text1" id="text1" class="block py-2.5 px-0 w-full text-sm text-[#7a0424] font-bold bg-transparent border-0 border-b-2 border-[#7a0424] appearance-none dark:text-white dark:border-[#7a0424] dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  />
-      <label for="text1" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#7a0424] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+      <label for="text1" class="peer-focus:font-medium absolute text-sm text-[#7a0424] dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#7a0424] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
   </div>
   <div class="relative  z-0 w-full mb-6 group">
       <input type="text" name="text2" id="text2" class="block py-2.5 px-0 w-full text-sm text-[#7a0424] font-bold bg-transparent border-0 border-b-2 border-[#7a0424] appearance-none dark:text-white dark:border-[#7a0424] dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  />
-      <label for="text2" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#7a0424] peer-focus:dark:text-[#7a0424] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">email Address</label>
+      <label for="text2" class="peer-focus:font-medium absolute text-sm text-[#7a0424] dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#7a0424] peer-focus:dark:text-[#7a0424] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">email Address</label>
   </div>
   <div class="relative  z-0 w-full mb-6 group">
-      <input type="text" name="text3" id="floating_text3" class="block py-2.5 px-0 w-full text-sm text-[#7a0424] font-bold bg-transparent border-0 border-b-2 border-[#7a0424] appearance-none dark:text-white dark:border-[#7a0424] dark:focus:border-[#7a0424] focus:outline-none focus:ring-0 focus:border-[#7a0424] peer" placeholder=" "  />
+      <textarea type="text" name="text3" id="floating_text3" class="block py-2.5 px-0 w-full text-sm text-[#7a0424] font-bold bg-transparent border-0 border-b-2 border-[#7a0424] appearance-none dark:text-white dark:border-[#7a0424] dark:focus:border-[#7a0424] focus:outline-none focus:ring-0 focus:border-[#7a0424] peer" placeholder=" "  />
       <label for="floating_text3" class="peer-focus:font-medium absolute text-sm text-[#7a0424] font-bold dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#7a0424] peer-focus:dark:text-blue-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your message</label>
   </div>
  
   <div class="grid md:grid-cols-2 md:gap-6">
    
   </div>
-  <div className="items-center flex justify-center">
+  <div className="items-center flex justify-center py-12">
   <button class="relative  inline-flex items-center justify-center  p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-[#7a0424] from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span class="relative w-64 text-lg px-16 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Send
@@ -163,7 +195,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div class="w-5/12 relative bg-white border-4 border-[#7a0424] h-screen">
+        <div class="w-5/12 relative bg-white  h-screen">
           <div class="  text-white grid absolute h-4/5 w-2/3 -translate-y-1/2 top-1/2 bg-blue bg-[#7a0424] left-0 transform h-1/3 p-12 justify-between">
             <p className="p-4 m-2">
               <h2 className="text-black">Email</h2>
@@ -182,6 +214,7 @@ const Contact = () => {
               </ul>
             </p>
           </div>
+        </div>
         </div>
       </div>
     </div>

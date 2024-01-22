@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
+// import logo2 from "../../assets/logo2.svg";
 import home from "../../assets/home.svg";
 import about from "../../assets/about.svg";
 import contact from "../../assets/contact.svg";
 import sermons from "../../assets/sermons.svg";
 import charity from "../../assets/charity.svg";
+import logo2 from "../../assets/logo2.png";
 import catp from "../../assets/catp.svg";
 
 
@@ -12,7 +14,7 @@ import catp from "../../assets/catp.svg";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleNav = () =>{
@@ -21,20 +23,33 @@ export const Navbar = () => {
   return (
     <nav className="me relative">
       {/* desktop */}
-      <div className="hidden lg:flex flex-row w-full justify-between px-24 items-center py-4">
+      <div className="hidden h-16 bg-[#7A0424]  lg:flex flex-row  w-full justify-between px-28 items-center py-4">
+     <div className="7/12 bg-[#7A0424] "> </div>
+      
+     <div className="w-5/12 bg-white flex py-4   "> <NavLink to="/contact"><b><h2 >Contact</h2></b></NavLink>
+        <NavLink to="/services"><b><h2 >Services</h2></b></NavLink>
+        
+        <a href="#"><b><h2>Charity</h2></b></a></div>
+      {/* <div className="flex justify-between  w-7/12 items-center"> 
       <NavLink to="/">
-      <h1>
-        <img src={logo} alt="" width={120} height={90}/>
+      <h1 className="flex">
+        <img src={logo2} alt="" width={120} height={80}/>
       </h1>
       </NavLink>
-      <div className="flex justify-between text-lg gap-12 items-center">
-        <a href="#about"><b><h2 >About</h2></b></a>
+      <span className="flex gap-12  items-center">
+      <NavLink to="/"><b><h2 className="text-white" >Home</h2></b></NavLink>
+        <a href="#about"><b><h2 className="text-white" >About</h2></b></a>
+      </span>
+      
+      </div>
+      
+      <div className="flex justify-between w-4/12 bg-white text-lg gap-24  items-center">
+     
         <NavLink to="/contact"><b><h2 >Contact</h2></b></NavLink>
         <NavLink to="/services"><b><h2 >Services</h2></b></NavLink>
-        {/* <a href="#"><b><h2>Contact</h2></b></a> */}
-        {/* <a href="./components/services/Services.jsx"><b><h2>Services</h2></b></a> */}
+        
         <a href="#"><b><h2>Charity</h2></b></a>
-      </div>
+      </div> */}
       </div>
       <div>
         <div className="flex justify-between px-8 py-4 shadow lg:hidden">
